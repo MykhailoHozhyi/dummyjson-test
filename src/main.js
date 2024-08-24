@@ -1,4 +1,5 @@
 import { getAllRecipes, getRecipeById } from './js/dummy-api';
+import { renderRecipes } from './js/render-functions';
 
-// getAllRecipes();
-getRecipeById(1);
+getAllRecipes().then(({recipes})=>{renderRecipes(recipes)});
+// getRecipeById(1);
